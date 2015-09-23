@@ -1,0 +1,14 @@
+/*.post-image {
+  height: 5em;
+  width: 5em;
+}*/
+
+.post-image {
+  width:100%;
+  height:100%;
+}
+
+/*.container {
+  height: 300px;
+  width: 300px;
+}*/

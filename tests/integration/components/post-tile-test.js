@@ -1,7 +1,7 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('article-tile', 'Integration | Component | article tile', {
+moduleForComponent('post-tile', 'Integration | Component | post tile', {
   integration: true
 });
 
@@ -17,9 +17,9 @@ test('it renders', function(assert) {
 
   // Template block usage:
   this.render(hbs`
-    {{#article-tile}}
+    {{#post-tile}}
       template block text
-    {{/article-tile}}
+    {{/post-tile}}
   `);
 
   assert.equal(this.$().text().trim(), 'template block text');
