@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="row">
+      {{#each model as |post|}}
+        {{post-title post=post}}
+      {{/each}}
+    </div>
+</div>
+
+{{outlet}}
