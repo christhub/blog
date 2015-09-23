@@ -1,10 +1,17 @@
+<!-- {{#if hovering}}
+  <p>hovered!</p>
+{{else}}
+  <p {{action "something" on="mouseEnter"}}>testing something</p>
+{{/if}}
+ -->
+
 <div class="col-xs-4">
     <div class="post">
       {{#link-to 'post' post.id}}
         <img class="post-image" src='{{post.photo}}'>
       {{/link-to}}
       <div>
-        <h2>{{post.headline}}</h2>
+        <h2 id="post">{{post.headline}}</h2>
       </div>
 
     </div>
