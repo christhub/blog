@@ -7,9 +7,13 @@
 
 <div class="col-xs-4">
     <div class="post">
-      {{#link-to 'post' post.id}}
+      {{#simple-modal enabled=true}}
+      <img class="post-image" src='{{post.photo}}'>
+      {{post.article}}
+      {{/simple-modal}}
+      <!-- {{#link-to 'post' post.id}}
         <img class="post-image" src='{{post.photo}}'>
-      {{/link-to}}
+      {{/link-to}} -->
       <div>
         <h2 id="post">{{post.headline}}</h2>
       </div>

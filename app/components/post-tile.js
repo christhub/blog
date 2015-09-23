@@ -7,4 +7,25 @@ export default Ember.Component.extend({
   //     this.set('hovering', true)
   //   }
   // }
+
+  actions: {
+    openModal: function(modalName, model) {
+
+        return this.render(modalName, {
+
+            into: 'application',
+            outlet: 'modal',
+            model: modal
+        });
+    },
+
+    closeModal: function() {
+
+        return this.disconnectOutlet({
+
+            outlet: 'modal',
+            parentView: 'application'
+        });
+    }
+}
 });
