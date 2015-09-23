@@ -1,14 +1,51 @@
-/*.post-image {
+.post-image {
   height: 5em;
   width: 5em;
-}*/
-
-.post-image {
-  width:100%;
-  height:100%;
 }
 
-/*.container {
-  height: 300px;
-  width: 300px;
-}*/
+.post {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /*overflow: hidden;*/
+
+}
+
+.post .post-image {
+  width:110%;
+  height:100%;
+  padding:0;
+}
+
+.post > div {
+  background-color:rgba(0,0,0,0.75);
+  font:bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  opacity:0;
+  position:absolute;
+  width:110%;
+  height:40%;
+  bottom:0;
+  left:0;
+  text-shadow: #000 1px 1px 0;
+  color: #ccc;
+  -webkit-transition: opacity 0.3s linear;
+}
+
+.post:hover > div {
+  display: block;
+  opacity:1.0;
+}
+
+.post h2 {
+  font-size: 1.0em;
+  /*letter-spacing: 0.2em;
+  text-transform: uppercase;*/
+  margin-bottom: 10px;
+}
+
+.post p {
+  margin-bottom: 10px;
+}
