@@ -1,6 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  // postURL: Ember.computed('post', function() {
+  //   debugger;
+  //   var postID = post.get('id');
+  //   var url = "/post/" + postID;
+  //   return url;
+  // }),
+
+
   actions: {
     openModal: function(post) {
       $(".modal-title").text(post.get('headline'));

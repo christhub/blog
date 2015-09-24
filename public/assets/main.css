@@ -110,3 +110,26 @@ body {
   text-align: right;
   font-weight: 500;
 }
+
+.nav .navbar-nav {
+  position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+  height:100%;
+}
+
+.nav .navbar-nav{
+  float: none;
+}
+/*.navbar-header, a.navbar-brand {
+  display: block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar-header, a.navbar-brand {
+  text-align: center;
+}*/
