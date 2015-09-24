@@ -6,9 +6,11 @@ export default Ember.Component.extend({
       $(".modal-title").text(post.get('headline'));
       $("#modal-image").attr("src", post.get('photo'));
       $("#myModal").modal('show');
+      $("#modal-author").text(post.get('author'));
+      $("#modal-date").text(post.get('date'));
 
       var article = post.get('article');
-      var shortArticle = article.substring(0,500);
+      var shortArticle = article.substring(0,1100);
 
       $("#modal-article").text(shortArticle);
 

@@ -2,24 +2,26 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">{{post.headline}}</h4>
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4 class="modal-title">{{post.headline}}</h4>
       </div>
       <div class="modal-body">
-        <img id="modal-image" src="">
+
       </div>
       <div>
-        <p id="modal-article">
-
-        </p>
-        <p>
-          <!-- {{#link-to 'post' post.id}}<b>Read more...</b>{{/link-to}} -->
-          <a href="">Read more...</a>
-        </p>
+        <div class="modal-text">
+          <img id="modal-image" class="modal-image" src="">
+          <span id="date-author-modal">
+            <i>by <label id="modal-author">,</label>
+            <span id="modal-date"></span></i><br>
+          </span>
+          <span id="modal-article"></span>
+          <a id="modal-link" href="">Read more...</a>
+        </div>
+        <!-- {{#link-to 'post' post.id}}<b>Read more...</b>{{/link-to}} -->
       </div>
-      <div class="modal-footer">
-
-      </div>
+      <!-- <div class="modal-footer">
+      </div> -->
     </div>
   </div>
 </div>

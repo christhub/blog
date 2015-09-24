@@ -1,9 +1,15 @@
 body {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Lato', sans-serif;
+
+}
+
+#post-headline {
+  font-weight: 700;
 }
 
 .container {
   margin-top: 50px;
+  font-family: 'Lato', sans-serif;
 }
 .post-image {
   height: 5em;
@@ -76,4 +82,31 @@ body {
   width: 250px;
   float:left;
   padding-right: 5px;
+}
+
+.modal, .modal-backdrop {
+  opacity: 0.8 !important;
+}
+
+.modal-title {
+  font-weight:bold;
+  font-size:2em;
+}
+
+#modal-article, .modal-text {
+  font-weight:300;
+  padding: 0 5px 5px 10px;
+}
+
+.modal-image {
+  height: 250px;
+  width: 250px;
+  float: left;
+  padding-right: 5px;
+}
+
+#date-author-modal {
+  display: block;
+  text-align: right;
+  font-weight: 500;
 }
