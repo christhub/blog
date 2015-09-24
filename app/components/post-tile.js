@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   actions: {
     openModal: function(post) {
       $(".modal-title").text(post.get('headline'));
-      // $("#modal-image").attr("src", post.get('photo'));
+      $("#modal-image").attr("src", post.get('photo'));
       $("#myModal").modal('show');
     }
   }
